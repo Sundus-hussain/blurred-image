@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blurry Loading</title>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+
+    body{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        overflow: hidden;
+        margin: 0;
+
+    }
+    .bg{
+         background: url(./beautiful-view-greenery-bridge-forest-perfect-background_181624-17827.avif);
+         position: absolute;
+         top: 0%;
+         left: 0%;
+         width: 100vw;
+         height: 100vh;
+         z-index: -1;
+         filter: blur(70px);
+    }
+    .loading-text{
+
+        font-size: 50px;
+        color: azure;
+    }
+    </style>
+
+</head>
+<body>
+<section class="bg"></section>
+<div class="loading-text">0%</div>
+
+<script src="./blurry.js" ></script>
+   
+    
+</body>
+</html>
